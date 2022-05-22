@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "cypress:run": "percy exec -- cypress run cypress run"
+  },
+  "devDependencies": {
+    "@percy/cli": "^1.2.1",
+    "@percy/cypress": "^3.1.1",
+    "cypress": "^9.6.1"
+  }
+}
