@@ -1,13 +1,17 @@
-name: Visual Testing Demo
-on: [push]
+name: visual-ci-workflow
+
+on: 
+  push:
+    branches:
+    - 'main'
+
 jobs:
-  check-bats-version:
+  linter:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-      - uses: ./package.json
-        with:
-          node-version: '17'
-      - run: npm install
-      - run: cypress:run
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+    - run: npm ci
+    - run: npm run cypress:run
