@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "cypress:run": "percy exec -- cypress run cypress run"
+    "cypress:run": "percy exec -- cypress run cypress run --port 9001"
   },
   "devDependencies": {
     "@percy/cli": "^1.2.1",
