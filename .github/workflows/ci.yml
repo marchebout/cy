@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Hello world action
-      with:
+      env:
         super_secret: ${{ secrets.PERCY_TOKEN }}
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
