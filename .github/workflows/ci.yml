@@ -7,7 +7,6 @@ on:
     
 env:
   PERCY_TOKEN: "${{ secrets.PERCY_TOKEN }}"
-  URL: "${{ secrets.URL }}"
 
 jobs:
   percy:
