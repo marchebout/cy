@@ -6,7 +6,7 @@ on:
     - 'main'
 
 jobs:
-  linter:
+  percy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -15,5 +15,5 @@ jobs:
         node-version: '14.x'
     - run: npm install
     - run: npm run cypress:run
-    env: 
-      credentials: ${{ secrets.PERCY_TOKEN }}
+      env: 
+        credentials: ${{ secrets.PERCY_TOKEN }}
