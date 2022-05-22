@@ -1,6 +1,6 @@
 describe('My First Test', () => {
     it('Visits the Kitchen Sink', () => {
-      cy.visit('https://todoist.com/es')
+      cy.visit('http://localhost:9001/')
       cy.percySnapshot('homePage');
     })
   })
