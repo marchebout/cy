@@ -4,4 +4,3 @@ describe('My First Test', () => {
       cy.percySnapshot('homePage');
     })
   })
-
